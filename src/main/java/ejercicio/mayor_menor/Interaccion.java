@@ -1,7 +1,6 @@
 package ejercicio.mayor_menor;
 
 import java.util.Scanner;
-import java.util.concurrent.locks.ReadWriteLock;
 
 public class Interaccion {
     //Declarar variables
@@ -25,4 +24,5 @@ public class Interaccion {
         }while (!validateInput);
         return numero;
     }
+
 }
