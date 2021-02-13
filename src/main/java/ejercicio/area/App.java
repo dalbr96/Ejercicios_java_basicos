@@ -1,6 +1,6 @@
 package ejercicio.area;
 
-import ejercicio.helpers.InputsNumbers;
+import ejercicio.helpers.Inputs;
 
 public class App {
 
@@ -8,7 +8,7 @@ public class App {
 
         System.out.println("Por favor, ingrese el radio del circulo");
 
-        Circulo circulo = new Circulo(InputsNumbers.pedirDoublePositivo("El radio debe ser mayor a 0"));
+        Circulo circulo = new Circulo(Inputs.pedirDoublePositivo("El radio debe ser mayor a 0"));
 
         System.out.println("El area del circulo es: "+ circulo.getArea());
 

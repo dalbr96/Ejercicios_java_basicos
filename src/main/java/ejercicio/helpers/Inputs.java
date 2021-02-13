@@ -2,7 +2,7 @@ package ejercicio.helpers;
 
 import java.util.Scanner;
 
-public class InputsNumbers {
+public class Inputs {
 
     /**
      * Metodo para pedirle un numero entero al usuario. El metodo continua en el bucle hasta que

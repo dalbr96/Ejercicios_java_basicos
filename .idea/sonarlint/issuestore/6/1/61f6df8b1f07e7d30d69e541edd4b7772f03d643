@@ -1,0 +1,6 @@
+
+€
+java:S1488"cImmediately return this expression instead of assigning it to the temporary variable "precioFinal".(üîñ8¨­¯Æù.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·ÒÄÿÿÿÿÿ
+†
+java:S4165"dRemove this useless assignment; "precio" already holds the assigned value along all execution paths.(”ˆ…Ùşÿÿÿÿ8ƒŞ©Æù.

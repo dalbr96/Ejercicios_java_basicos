@@ -1,6 +1,6 @@
 package ejercicio.mayor_menor;
 
-import ejercicio.helpers.InputsNumbers;
+import ejercicio.helpers.Inputs;
 
 public class App {
     private static void primerEjercicio(){
@@ -14,9 +14,9 @@ public class App {
         int segundoNumero;
         System.out.println("Segundo Ejercicio: valores por consola");
         System.out.println("Por favor, ingrese el primer numero");
-        primerNumero = InputsNumbers.pedirInt();
+        primerNumero = Inputs.pedirInt();
         System.out.println("Por favor, ingrese el segundo numero");
-        segundoNumero = InputsNumbers.pedirInt();
+        segundoNumero = Inputs.pedirInt();
         Mayor segundoPunto = new Mayor(primerNumero,segundoNumero);
         segundoPunto.compararNumeros();
     }

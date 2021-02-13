@@ -1,6 +1,6 @@
 package ejercicio.numero_mayor_cero;
 
-import ejercicio.helpers.InputsNumbers;
+import ejercicio.helpers.Inputs;
 
 public class App {
     public static void main(String[] args) {
@@ -9,8 +9,8 @@ public class App {
         do{
 
             System.out.println("Por favor ingrese un numero mayor o igual a 0");
-            numero = InputsNumbers.pedirDouble();
-            
+            numero = Inputs.pedirDouble();
+
         }while (numero<0);
 
 
