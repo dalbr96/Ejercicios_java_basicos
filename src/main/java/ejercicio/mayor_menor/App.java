@@ -1,5 +1,7 @@
 package ejercicio.mayor_menor;
 
+import ejercicio.helpers.InputsNumbers;
+
 public class App {
     private static void primerEjercicio(){
         System.out.println("Primer Ejercicio: valores quemados");
@@ -8,9 +10,14 @@ public class App {
     }
 
     private static void segundoEjercicio(){
+        int primerNumero;
+        int segundoNumero;
         System.out.println("Segundo Ejercicio: valores por consola");
-        Mayor segundoPunto = new Mayor(Interaccion.pedirNumero("Primer numero"),
-                Interaccion.pedirNumero("Segundo numero"));
+        System.out.println("Por favor, ingrese el primer numero");
+        primerNumero = InputsNumbers.pedirInt();
+        System.out.println("Por favor, ingrese el segundo numero");
+        segundoNumero = InputsNumbers.pedirInt();
+        Mayor segundoPunto = new Mayor(primerNumero,segundoNumero);
         segundoPunto.compararNumeros();
     }
 
