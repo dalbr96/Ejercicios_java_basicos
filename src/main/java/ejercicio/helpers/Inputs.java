@@ -27,6 +27,22 @@ public class Inputs {
         return numero;
     }
 
+    public static int pedirIntPositivo(String mensajeError) {
+        int numero;
+        boolean validador;
+        do {
+            numero = pedirInt();
+            if (numero > 0) {
+                validador = true;
+            } else {
+                System.out.println(mensajeError);
+                System.out.println("Por favor intente de nuevo");
+                validador = false;
+            }
+        } while (!validador);
+        return numero;
+    }
+
     public static double pedirDouble() {
         double numero = 0;
         boolean validador = false;
@@ -72,6 +88,23 @@ public class Inputs {
             } catch (Exception e) {
                 System.out.println("Ingreso no valido, por favor intente de nuevo");
                 respuesta = "";
+            }
+        } while (!validador);
+        return respuesta;
+    }
+
+    public static char pedirChar() {
+        char respuesta;
+        boolean validador = false;
+
+        do {
+            try {
+                Scanner in = new Scanner(System.in);
+                respuesta = in.nextLine().charAt(0);
+                validador = true;
+            } catch (Exception e) {
+                System.out.println("Ingreso no valido, por favor intente de nuevo");
+                respuesta = ' ';
             }
         } while (!validador);
         return respuesta;

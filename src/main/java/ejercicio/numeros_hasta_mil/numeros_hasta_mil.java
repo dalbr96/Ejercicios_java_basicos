@@ -1,4 +1,4 @@
-package ejercicio;
+package ejercicio.numeros_hasta_mil;
 
 import ejercicio.helpers.Inputs;
 
