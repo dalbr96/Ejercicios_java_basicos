@@ -1,5 +1,8 @@
 package ejercicio.electrodomesticos.objetos;
 
+import ejercicio.electrodomesticos.constantes.Color;
+import ejercicio.electrodomesticos.constantes.Consumo;
+
 public class Electrodomestico {
 
     protected final int PESO_DEFAULT = 5;

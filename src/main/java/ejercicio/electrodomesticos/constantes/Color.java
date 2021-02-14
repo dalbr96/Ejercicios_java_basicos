@@ -1,4 +1,4 @@
-package ejercicio.electrodomesticos.objetos;
+package ejercicio.electrodomesticos.constantes;
 
 public enum Color {
     BLANCO,

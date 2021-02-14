@@ -1,22 +1,22 @@
 package ejercicio.electrodomesticos.objetos;
 
-public class Television extends Electrodomestico{
+public class Lavadora extends Electrodomestico{
 
     private final int CARGA_DEFAULT = 5;
 
     private int carga;
 
-    public Television(int precioBase, String color, char consumo, int peso, int carga){
+    public Lavadora(int precioBase, String color, char consumo, int peso, int carga){
         super(precioBase, color, consumo, peso);
         this.carga = carga;
     }
 
-    public Television(int precio, int peso){
+    public Lavadora(int precio, int peso){
         super(precio, peso);
         this.carga = CARGA_DEFAULT;
     }
 
-    public Television(){
+    public Lavadora(){
         super();
         this.carga = CARGA_DEFAULT;
     }
