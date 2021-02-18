@@ -24,20 +24,13 @@ public class Televisor extends Electrodomestico{
         this.resolucion = RESOLUCION_DEFAULT;
         this.sintonizadorTDT = SINTONIZADOR_DEFAULT;
     }
-
-    public int getResolucion() {
-        return this.resolucion;
-    }
-
-    public boolean getSintonizadorTDT(){
-        return this.sintonizadorTDT;
-    }
+    
 
     private int precioSintetizador(){
 
         int precio = 0;
 
-        if(getSintonizadorTDT()){
+        if(this.sintonizadorTDT){
             precio = 50;
         }
 
@@ -49,7 +42,7 @@ public class Televisor extends Electrodomestico{
 
         int precio = super.precioFinal() + precioSintetizador();
 
-        if(getResolucion() > 40){
+        if(this.resolucion > 40){
             precio *= 1.3;
         }
 
