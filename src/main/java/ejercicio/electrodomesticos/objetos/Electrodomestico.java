@@ -35,21 +35,10 @@ public class Electrodomestico {
         this.peso = PESO_DEFAULT;
     }
 
-    public Color getColor() {
-        return color;
-    }
-
-    public Consumo getConsumo() {
-        return consumo;
-    }
-
     public int getPeso() {
         return peso;
     }
 
-    public int getPrecioBase() {
-        return precioBase;
-    }
 
     private Consumo comprobarConsumoEnergetico(char letra){
         Consumo consumo;
@@ -125,7 +114,7 @@ public class Electrodomestico {
         return precioPeso;
     }
     public int precioFinal(){
-        int precioFinal = getPrecioBase() + getConsumo().getPrecio() + getPrecioPeso();
+        int precioFinal = this.precioBase + this.consumo.getPrecio() + getPrecioPeso();
         return precioFinal;
     }
 
