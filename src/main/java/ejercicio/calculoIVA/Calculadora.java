@@ -7,17 +7,9 @@ public class Calculadora {
         this.precio = precio;
     }
 
-    public double getPrecio(){
-        return this.precio;
-    }
-
-    public void setPrecio(){
-        this.precio = precio;
-    }
-
     public double calcularPrecioFinal(){
 
-        double precioFinal = getPrecio()*1.21;
+        double precioFinal = this.precio*1.21;
         return precioFinal;
     }
 }
