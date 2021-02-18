@@ -24,7 +24,7 @@ public class Televisor extends Electrodomestico{
         this.resolucion = RESOLUCION_DEFAULT;
         this.sintonizadorTDT = SINTONIZADOR_DEFAULT;
     }
-    
+
 
     private int precioSintetizador(){
 

@@ -20,50 +20,7 @@ public class GestorFrase {
         this.vocalesO = 0;
         this.vocalesU = 0;
     }
-
-    public void setFrase(String frase){
-        this.frase = frase;
-    }
-
-    public void setVocalesA(int vocalesA){
-        this.vocalesA = vocalesA;
-    }
-
-    public void setVocalesE(int vocalesE){
-        this.vocalesE = vocalesE;
-    }
-
-    public void setVocalesI(int vocalesI){
-        this.vocalesI = vocalesI;
-    }
-
-    public void setVocalesO(int vocalesO){
-        this.vocalesO = vocalesO;
-    }
-
-    public void setVocalesU(int vocalesU){
-        this.vocalesU = vocalesU;
-    }
-
-    public int getVocalesA(){
-        return this.vocalesA;
-    }
-
-    public int getVocalesE(){
-        return this.vocalesE;
-    }
-
-    public int getVocalesI() {
-        return vocalesI;
-    }
-
-    public int getVocalesO() {
-        return vocalesO;
-    }
-
-    public int getVocalesU() {
-        return vocalesU;
-    }
+    
 
     public String getFrase() {
         return frase;
@@ -76,19 +33,19 @@ public class GestorFrase {
         for (int i = 0; i < frase.length(); i++) {
             switch (frase.toLowerCase().charAt(i)){
                 case 'a':
-                    setVocalesA(getVocalesA() + 1);
+                    this.vocalesA += 1;
                     break;
                 case 'e':
-                    setVocalesE(getVocalesE() + 1);
+                    this.vocalesE += 1;
                     break;
                 case 'i':
-                    setVocalesI(getVocalesI() + 1);
+                    this.vocalesI += 1;
                     break;
                 case 'o':
-                    setVocalesO(getVocalesO() + 1);
+                    this.vocalesO += 1;
                     break;
                 case 'u':
-                    setVocalesU(getVocalesU() + 1);
+                    this.vocalesU += 1;
                     break;
                 default:
                     break;
@@ -100,11 +57,11 @@ public class GestorFrase {
         this.contarVocales();
 
         System.out.println("El tamaño de la frase \'" + getFrase() + " \' es: " + getFrase().length());
-        System.out.println("Tiene " + getVocalesA() + " a");
-        System.out.println("Tiene " + getVocalesE() + " e");
-        System.out.println("Tiene " + getVocalesI() + " i");
-        System.out.println("Tiene " + getVocalesO() + " o");
-        System.out.println("Tiene " + getVocalesU() + " u");
+        System.out.println("Tiene " + this.vocalesA + " a");
+        System.out.println("Tiene " + this.vocalesE + " e");
+        System.out.println("Tiene " + this.vocalesI + " i");
+        System.out.println("Tiene " + this.vocalesO + " o");
+        System.out.println("Tiene " + this.vocalesU + " u");
 
     }
 }
