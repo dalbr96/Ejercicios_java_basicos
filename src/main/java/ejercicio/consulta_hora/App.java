@@ -1,5 +1,6 @@
 package ejercicio.consulta_hora;
 
+import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -10,7 +11,7 @@ public class App {
         Calendar calendario = new GregorianCalendar();
 
         int anho = calendario.get(Calendar.YEAR);
-        int mes = calendario.get(Calendar.MONTH);
+        int mes = calendario.get(Calendar.MONTH) + 1;
         int dia = calendario.get(Calendar.DAY_OF_MONTH);
 
         int hora = calendario.get(Calendar.HOUR_OF_DAY);
