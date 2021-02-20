@@ -11,29 +11,14 @@ public class Mayor {
         this.segundoNumero = segundoNumero;
     }
 
-    public int getPrimerNumero() {
-        return primerNumero;
-    }
-
-    public int getSegundoNumero(){
-        return segundoNumero;
-    }
-
-    public void setPrimerNumero(int primerNumero) {
-        this.primerNumero = primerNumero;
-    }
-
-    public void setSegundoNumero(int segundoNumero) {
-        this.segundoNumero = segundoNumero;
-    }
 
     public void compararNumeros(){
 
-        if(getPrimerNumero() > getSegundoNumero()){
-            System.out.println("El numero mayor es "+ getPrimerNumero());
+        if(this.primerNumero > this.segundoNumero){
+            System.out.println("El numero mayor es "+ this.primerNumero);
         }
-        else if(getPrimerNumero() < getSegundoNumero()){
-            System.out.println("El numero mayor es "+ getSegundoNumero());
+        else if(this.primerNumero < this.segundoNumero){
+            System.out.println("El numero mayor es "+ this.segundoNumero);
         }
         else{
             System.out.println("Ambos numeros son iguales");

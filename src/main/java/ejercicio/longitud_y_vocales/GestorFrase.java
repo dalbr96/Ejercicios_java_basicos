@@ -20,7 +20,7 @@ public class GestorFrase {
         this.vocalesO = 0;
         this.vocalesU = 0;
     }
-    
+
 
     public String getFrase() {
         return frase;
